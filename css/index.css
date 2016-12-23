@@ -33,3 +33,9 @@ ul.side-nav.fixed::-webkit-scrollbar {
 #General {
 	margin-top: 5em;
 }
+
+#activity {
+	padding-top: 1em;
+	text-align: right;
+	vertical-align: bottom;
+}

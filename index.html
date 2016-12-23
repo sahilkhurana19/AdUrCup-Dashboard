@@ -46,96 +46,67 @@
 </header>
 <main>
 	<div class="container">
-		<div class="row" id="form1">
+	<form class="col s12">
+		<div class="row" id="generalForm">
 			<div class="col m7 l7 s12 offset-l3 offset-m3">
 				<div class="row">
-				    <form class="col s12">
 				      <div class="row">
-				        <div class="input-field col s6">
-				          <input placeholder="Placeholder" id="first_name" type="text" class="validate">
-				          <label for="first_name">First Name</label>
+				        <div class="input-field col m6 l6 s12">
+				          <input id="Product_ID" type="text" class="validate">
+				          <label for="Product_ID">Product ID</label>
 				        </div>
-				        <div class="input-field col s6">
-				          <input id="last_name" type="text" class="validate">
-				          <label for="last_name">Last Name</label>
+				        <div class="input-field col m6 l6 s6">
+				        	<div class="row">
+				        		<div class="col s4 m4 l4" id="activity">
+									Active: 
+				        		</div>
+				        		<div class="col s4 m4 l4">
+									<input id="Active" type="radio" name="Activity">
+				          			<label for="Active">Yes</label> 
+				        		</div>
+				        		<div class="col s4 m4 l4">
+									<input id="Inactive" type="radio" name="Activity">
+				         	 		<label for="Inactive">No</label> 
+				        		</div>
+				        	</div>
 				        </div>
 				      </div>
 				      <div class="row">
-				        <div class="input-field col s12">
-				          <input disabled value="I am not editable" id="disabled" type="text" class="validate">
-				          <label for="disabled">Disabled</label>
+				        <div class="input-field col m6 l6 s12">
+				          <input id="Image_Link" type="text" class="validate" value="Rv-Adurcup27-">
+				          <label for="Image_Link">Image Link</label>
+				        </div>
+				        <div class="input-field col m6 l6 s12">
+				          <select>
+				          	<option value="" disabled selected>Choose Category</option>
+				          	<option value="Bowl">Bowl</option>
+						    <option value="Container">Container</option>
+						    <option value="Cutlery">Cutlery</option>
+				          </select>
+				          <label>Crockery Type</label>
 				        </div>
 				      </div>
 				      <div class="row">
-				        <div class="input-field col s12">
-				          <input id="password" type="password" class="validate">
-				          <label for="password">Password</label>
+				        <div class="input-field col m6 l6 s12">
+				          <input id="Sub_Category" type="text" value="-">
+				          <label for="Sub_Category">Sub Category</label>
+				        </div>
+				        <div class="input-field col m6 l6 s12">
+				          <input placeholder="Special Tag" id="Special_Tag" type="text">
+				          <label for="Special_Tag">Special Name Tag</label>
 				        </div>
 				      </div>
 				      <div class="row">
-				        <div class="input-field col s12">
-				          <input id="email" type="email" class="validate">
-				          <label for="email">Email</label>
+				        <div class="input-field col m12 l12 s12">
+				          <input id="Product_Title" type="text" value="">
+				          <label for="Product_Title">Product Title</label>
 				        </div>
-				      </div>
-				      <div class="row">
-				        <div class="col s12">
-				          This is an inline input field:
-				          <div class="input-field inline">
-				            <input id="email" type="email" class="validate">
-				            <label for="email" data-error="wrong" data-success="right">Email</label>
-				          </div>
-				        </div>
-				      </div>
-				    </form>
+				      </div>				
 				  </div>
+				</div>
 			</div>
-		</div>
-		<div class="row" id="form2">
-			<div class="col m7 l7 s12 offset-l3 offset-m3">
-				<div class="row">
-				    <form class="col s12">
-				      <div class="row">
-				        <div class="input-field col s6">
-				          <input placeholder="Placeholder" id="first_name" type="text" class="validate">
-				          <label for="first_name">First Name</label>
-				        </div>
-				        <div class="input-field col s6">
-				          <input id="last_name" type="text" class="validate">
-				          <label for="last_name">Last Name</label>
-				        </div>
-				      </div>
-				      <div class="row">
-				        <div class="input-field col s12">
-				          <input disabled value="I am not editable" id="disabled" type="text" class="validate">
-				          <label for="disabled">Disabled</label>
-				        </div>
-				      </div>
-				      <div class="row">
-				        <div class="input-field col s12">
-				          <input id="password" type="password" class="validate">
-				          <label for="password">Password</label>
-				        </div>
-				      </div>
-				      <div class="row">
-				        <div class="input-field col s12">
-				          <input id="email" type="email" class="validate">
-				          <label for="email">Email</label>
-				        </div>
-				      </div>
-				      <div class="row">
-				        <div class="col s12">
-				          This is an inline input field:
-				          <div class="input-field inline">
-				            <input id="email" type="email" class="validate">
-				            <label for="email" data-error="wrong" data-success="right">Email</label>
-				          </div>
-				        </div>
-				      </div>
-				    </form>
-				  </div>
-			</div>
-		</div>
+			</form>
+		
 		<div class="row">
 			<div class="col m7 l7 s12 offset-m3 offset-l3">
 				<a class="waves-effect waves-light btn previous-button">Previous</a>
