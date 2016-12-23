@@ -1,0 +1,35 @@
+body {
+	padding-top: 1em;
+	height: 100%;
+	overflow-y: scroll;
+}
+
+
+
+
+ul.side-nav.fixed {
+	overflow: auto;
+}
+
+ul.side-nav.fixed::-webkit-scrollbar {
+	width: 0 !important;
+}
+
+.side-nav a {
+	color: #1976d2;
+}
+
+.side-nav.fixed a {
+	color: #1976d2;
+}
+
+
+#adlogo {
+	width: 50%;
+	margin-top: 1em;
+	margin-left: 4.5em;
+}
+
+#General {
+	margin-top: 5em;
+}
