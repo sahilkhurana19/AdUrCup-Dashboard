@@ -3,7 +3,9 @@ var formNumber = 1;
 $("document").ready(function(){
     Materialize.updateTextFields();
     $('select').material_select();
-    
+    $("#generalForm").hide();
+	$("#appearanceForm").hide();
+    /*
 	$(".next-button").on("click", function(){
 		console.log("++")
 		if(formNumber < 2)
@@ -29,7 +31,7 @@ $("document").ready(function(){
 	}
 }
 	
-
+*/
 
 
 });
