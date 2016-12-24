@@ -43,3 +43,13 @@ ul.side-nav.fixed::-webkit-scrollbar {
 	text-align: right;
 	vertical-align: bottom;
 }
+
+#weight_unit {
+	padding-top: 1em;
+	text-align: right;
+}
+
+#volume_unit {
+	padding-top: 1em;
+	text-align: right;
+}
