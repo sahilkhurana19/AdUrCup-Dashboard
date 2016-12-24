@@ -11,17 +11,17 @@
 	
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
-<body>
+<body class="white-text grey lighten-5">
 <header>
 	<div class="container" id="sidebar">
 		<a href="#" data-activates="nav-mobile" class="button-collapse top-nav waves-effect waves-light circle hide-on-large-only">
 			<i class="material-icons">menu</i>
 		</a>
 	</div>
-	<ul id="nav-mobile" class="side-nav fixed">
+	<ul id="nav-mobile" class="side-nav fixed grey lighten-2">
 	<li class="logo" id="adlogo">
 		<a id="logo-container" href="#" class="brand-logo">
-			<img src="img/logo.png" class="responsive-img">
+			<img src="img/logo-white.png" class="responsive-img">
 		</a>
 	</li>
 	<li class="bold" id="General">
@@ -43,12 +43,29 @@
 		<a href="#" class="waves-effect">Sales</a>		
 	</li>
 	</ul>
+	<!--nav id="topbar">
+	    <div class="nav-wrapper">
+	    	<a href="#" class="center brand-logo">Logo</a>
+	    </div>
+  	</nav-->
 </header>
 <main>
-	<div class="container">
-	<form class="col s12">
+	<div class="	">
+	<div class="row">
+	<div class="row">
+			<div class="col s12 m12 l12">
+				<nav id="topbar">
+	    			<div class="nav-wrapper">
+	    				<a href="#" class="center brand-logo" id="sectionName">Logo</a>
+	    			</div>
+  				</nav>
+			</div>
+		</div>
+	<div class="col m7 l7 s12 offset-l3 offset-m3">
+	<form>
+		
 		<div class="row" id="generalForm">
-			<div class="col m7 l7 s12 offset-l3 offset-m3">
+			<div class="">
 				<div class="row">
 				      <div class="row">
 				        <div class="input-field col m6 l6 s12">
@@ -106,7 +123,7 @@
 				</div>
 			</div>
 			<div class="row" id="appearanceForm">
-				<div class="col s12 l7 m7  offset-l3 offset-m3">
+				<div class="">
 					<div class="row">
 						<div class="input-field col m6 l6 s12">
 				        	<select>
@@ -172,7 +189,7 @@
 				</div>
 			</div>
 			<div class="row" id="dimensionsForm">
-				<div class="col s12 l7 m7 offset-l3 offset-m3">
+				<div class="">
 					<div class="row">
 						<div class="col s12 m12 l12">							
 							<div class="row" style="margin-top: 1em">
@@ -274,7 +291,7 @@
 				</div>	
 			</div>
 			<div class="row" id="densityForm">
-				<div class="col m7 l7 s12 offset-l3 offset-m3">
+				<div class="">
 					<div class="row">
 						<div class="col s12 m6 l6 input-field">
 							<input placeholder="Weight" id="Weight" type="text" value="0">
@@ -330,7 +347,7 @@
 				</div>
 			</div>
 			<div class="row" id="featureForm">
-				<div class="col m7 l7 s12 offset-l3 offset-m3">
+				<div class="">
 					<div class="row input-field">
 				    	<div class="col s4 m4 l4" id="sealable">
 							Sealable: 
@@ -423,7 +440,7 @@
 				</div>
 			</div>
 			<div class="row" id="salesForm">
-				<div class="col m7 l7 s12 offset-l3 offset-m3">
+				<div class="">
 					<div class="row">
 						<div class="col s12 m6 l6 input-field">
 							<input placeholder="Manufacturer" id="manufacturer" type="text" value="">
@@ -501,15 +518,24 @@
 				</div>
 			</div>
 			</form>
-		
-		<div class="row">
+			<div class="row">
 			<div class="col m7 l7 s12 offset-m3 offset-l3">
 				<a class="waves-effect waves-light btn previous-button">Previous</a>
 				<a class="waves-effect waves-light btn next-button">Next</a>
 			</div>
 		</div>
-		
+		</div>
+		<div class="col m2 l2" style="margin-left: 0em">
+			<!--ul id="rightImages">
+			<li><img src="img/pest_icon.png" class="responsive-img" id="greenImg"></li>
+			<li><img src="img/disposable_icon.png" class="responsive-img" id="blueImg"></li>
+			<li><img src="img/wifi_icon.png" class="responsive-img" id="orangeImg"></li>
+			<li><img src="img/housekeeping_icon.png" class="responsive-img" id="pinkImg"></li>
+			</ul-->
+		</div>
+		</div>
 	</div>
+		
 </main>
 <footer>
 	

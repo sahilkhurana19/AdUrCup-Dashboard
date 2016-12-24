@@ -3,12 +3,13 @@ var formNumber = 1;
 $("document").ready(function(){
     Materialize.updateTextFields();
     $('select').material_select();
-    $("#generalForm").show();
-	$("#appearanceForm").hide();
-	$("#dimensionsForm").hide();
-	$("#densityForm").hide();
-	$("#featureForm").hide();
-	$("#salesForm").hide();
+    Toggle(formNumber);
+    //$("#generalForm").show();
+	//$("#appearanceForm").hide();
+	//$("#dimensionsForm").hide();
+	//$("#densityForm").hide();
+	//$("#featureForm").hide();
+	//$("#salesForm").hide();
     
 	$(".next-button").on("click", function(){
 		console.log("++")
@@ -31,6 +32,8 @@ $("document").ready(function(){
 				$("#densityForm").hide();
 				$("#featureForm").hide();
 				$("#salesForm").hide();
+				$("nav").css("background-color", "#66bc46");
+				document.getElementById("sectionName").innerHTML = "General";
 				break;
 
 		case 2: $("#appearanceForm").show();
@@ -39,6 +42,8 @@ $("document").ready(function(){
 				$("#densityForm").hide();
 				$("#featureForm").hide();
 				$("#salesForm").hide();
+				$("nav").css("background-color", "#4ab9eb");
+				document.getElementById("sectionName").innerHTML = "Appearance";
 				break;
 
 		case 3: $("#dimensionsForm").show();
@@ -47,6 +52,8 @@ $("document").ready(function(){
 				$("#densityForm").hide();
 				$("#featureForm").hide();
 				$("#salesForm").hide();
+				$("nav").css("background-color", "#f49d31");
+				document.getElementById("sectionName").innerHTML = "Dimensions";
 				break;
 
 		case 4: $("#densityForm").show();
@@ -55,6 +62,8 @@ $("document").ready(function(){
 				$("#dimensionsForm").hide();
 				$("#featureForm").hide();
 				$("#salesForm").hide();
+				$("nav").css("background-color", "#df31f4");
+				document.getElementById("sectionName").innerHTML = "Density";
 				break;
 		
 		case 5: $("#featureForm").show();
@@ -63,6 +72,8 @@ $("document").ready(function(){
 				$("#dimensionsForm").hide();
 				$("#densityForm").hide();
 				$("#salesForm").hide();
+				$("nav").css("background-color", "#f43131");
+				document.getElementById("sectionName").innerHTML = "Features";
 				break;
 
 		case 6: $("#salesForm").show();
@@ -71,6 +82,8 @@ $("document").ready(function(){
 				$("#dimensionsForm").hide();
 				$("#densityForm").hide();
 				$("#featureForm").hide();
+				$("nav").css("background-color", "#26a69a");
+				document.getElementById("sectionName").innerHTML = "Sales";
 				break;
 
 	}

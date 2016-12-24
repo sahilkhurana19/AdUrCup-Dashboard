@@ -8,8 +8,26 @@ body {
 	background-color: red;
 }
 
+#topbar {
+	margin-top: -1em;
+}
 
+[type="radio"]:checked+label:after, [type="radio"].with-gap:checked+label:after {
+	background-color: black;
+}
 
+[type="radio"]:checked+label:after, [type="radio"].with-gap:checked+label:before, [type="radio"].with-gap:checked+label:after {
+	border: 2px solid black;
+}
+
+input:not([type]):focus:not([readonly]), input[type=text]:focus:not([readonly]), input[type=password]:focus:not([readonly]), input[type=email]:focus:not([readonly]), input[type=url]:focus:not([readonly]), input[type=time]:focus:not([readonly]), input[type=date]:focus:not([readonly]), input[type=datetime]:focus:not([readonly]), input[type=datetime-local]:focus:not([readonly]), input[type=tel]:focus:not([readonly]), input[type=number]:focus:not([readonly]), input[type=search]:focus:not([readonly]), textarea.materialize-textarea:focus:not([readonly]) {
+	border-bottom: 1px solid black;
+	box-shadow: 0 1px 0 0 black;
+}
+
+label {
+	color: white;
+}
 
 ul.side-nav.fixed {
 	overflow: auto;
@@ -20,11 +38,13 @@ ul.side-nav.fixed::-webkit-scrollbar {
 }
 
 .side-nav a {
-	color: #1976d2;
+	text-align: center;
+	color: white;
 }
 
 .side-nav.fixed a {
-	color: #1976d2;
+	text-align: center;
+	color: white;
 }
 
 
@@ -36,7 +56,32 @@ ul.side-nav.fixed::-webkit-scrollbar {
 
 #General {
 	margin-top: 5em;
+	background-color: #66bc46;	
 }
+
+#Appearance {
+	margin-top: 1em;
+	background-color: #4ab9eb;
+}
+
+#Dimensions {
+	margin-top: 1em;
+	background-color: #f49d31;
+}
+
+#Density {
+	margin-top: 1em;
+	background-color: #df31f4;
+}
+#Features {
+	margin-top: 1em;
+	background-color: #f43131;
+}
+#Sales {
+	margin-top: 1em;
+	background-color: #26a69a;
+}
+
 
 #activity {
 	padding-top: 1em;
@@ -82,4 +127,32 @@ ul.side-nav.fixed::-webkit-scrollbar {
 #biodegradable {
 	padding-top: 1em;
 	text-align: left;
+}
+
+#rightImages li {
+	padding-top: 1em;
+	text-align: center;
+}
+
+#rightImages li img {
+	width: 55%;
+	border-radius: 80px;
+	padding: 10px;
+
+}
+
+#greenImg {
+	background: #66bc46;
+}
+#blueImg {
+	background: #4ab9eb;
+}
+#orangeImg {
+	background: #f49d31;
+}
+#pinkImg {
+	background: #df31f4;
+}
+#redImg {
+	background: #f43131;
 }
