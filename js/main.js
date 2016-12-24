@@ -10,7 +10,9 @@ $("document").ready(function(){
 	//$("#densityForm").hide();
 	//$("#featureForm").hide();
 	//$("#salesForm").hide();
-    
+	//document.getElementById("submitbutton").hide();
+    $("button").hide();
+
 	$(".next-button").on("click", function(){
 		console.log("++")
 		if(formNumber < 6)
@@ -32,7 +34,7 @@ $("document").ready(function(){
 				$("#densityForm").hide();
 				$("#featureForm").hide();
 				$("#salesForm").hide();
-				$("nav").css("background-color", "#66bc46");
+				$("nav").css("background-color", "#1b5e20");
 				document.getElementById("sectionName").innerHTML = "General";
 				break;
 
@@ -42,7 +44,7 @@ $("document").ready(function(){
 				$("#densityForm").hide();
 				$("#featureForm").hide();
 				$("#salesForm").hide();
-				$("nav").css("background-color", "#4ab9eb");
+				$("nav").css("background-color", "#01579b");
 				document.getElementById("sectionName").innerHTML = "Appearance";
 				break;
 
@@ -52,7 +54,7 @@ $("document").ready(function(){
 				$("#densityForm").hide();
 				$("#featureForm").hide();
 				$("#salesForm").hide();
-				$("nav").css("background-color", "#f49d31");
+				$("nav").css("background-color", "#f50057");
 				document.getElementById("sectionName").innerHTML = "Dimensions";
 				break;
 
@@ -62,7 +64,7 @@ $("document").ready(function(){
 				$("#dimensionsForm").hide();
 				$("#featureForm").hide();
 				$("#salesForm").hide();
-				$("nav").css("background-color", "#df31f4");
+				$("nav").css("background-color", "#e65100");
 				document.getElementById("sectionName").innerHTML = "Density";
 				break;
 		
@@ -72,7 +74,7 @@ $("document").ready(function(){
 				$("#dimensionsForm").hide();
 				$("#densityForm").hide();
 				$("#salesForm").hide();
-				$("nav").css("background-color", "#f43131");
+				$("nav").css("background-color", "#b71c1c");
 				document.getElementById("sectionName").innerHTML = "Features";
 				break;
 
@@ -82,10 +84,15 @@ $("document").ready(function(){
 				$("#dimensionsForm").hide();
 				$("#densityForm").hide();
 				$("#featureForm").hide();
-				$("nav").css("background-color", "#26a69a");
+				$("nav").css("background-color", "#004d40");
 				document.getElementById("sectionName").innerHTML = "Sales";
 				break;
 
+	}
+
+	if(formNumber == 6)
+	{
+		$("button").show();
 	}
 }
 	

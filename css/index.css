@@ -4,6 +4,10 @@ body {
 	overflow-y: scroll;
 }
 
+.bold {
+	font-weight: bolder;	
+}
+
 #test {
 	background-color: red;
 }
@@ -40,6 +44,7 @@ ul.side-nav.fixed::-webkit-scrollbar {
 .side-nav a {
 	text-align: center;
 	color: white;
+	font-size: 20px;
 }
 
 .side-nav.fixed a {
@@ -56,30 +61,30 @@ ul.side-nav.fixed::-webkit-scrollbar {
 
 #General {
 	margin-top: 5em;
-	background-color: #66bc46;	
+	background-color: #1b5e20;	
 }
 
 #Appearance {
 	margin-top: 1em;
-	background-color: #4ab9eb;
+	background-color: #01579b;
 }
 
 #Dimensions {
 	margin-top: 1em;
-	background-color: #f49d31;
+	background-color: #f50057;
 }
 
 #Density {
 	margin-top: 1em;
-	background-color: #df31f4;
+	background-color: #e65100;
 }
 #Features {
 	margin-top: 1em;
-	background-color: #f43131;
+	background-color: #b71c1c;
 }
 #Sales {
 	margin-top: 1em;
-	background-color: #26a69a;
+	background-color: #004d40;
 }
 
 
