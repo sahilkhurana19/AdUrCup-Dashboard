@@ -3,15 +3,16 @@ var formNumber = 1;
 $("document").ready(function(){
     Materialize.updateTextFields();
     $('select').material_select();
-    $("#generalForm").hide();
+    $("#generalForm").show();
 	$("#appearanceForm").hide();
 	$("#dimensionsForm").hide();
 	$("#densityForm").hide();
 	$("#featureForm").hide();
-    /*
+	$("#salesForm").hide();
+    
 	$(".next-button").on("click", function(){
 		console.log("++")
-		if(formNumber < 5)
+		if(formNumber < 6)
 			formNumber++;
 		Toggle(formNumber);
 	});
@@ -29,6 +30,7 @@ $("document").ready(function(){
 				$("#dimensionsForm").hide();
 				$("#densityForm").hide();
 				$("#featureForm").hide();
+				$("#salesForm").hide();
 				break;
 
 		case 2: $("#appearanceForm").show();
@@ -36,6 +38,7 @@ $("document").ready(function(){
 				$("#dimensionsForm").hide();
 				$("#densityForm").hide();
 				$("#featureForm").hide();
+				$("#salesForm").hide();
 				break;
 
 		case 3: $("#dimensionsForm").show();
@@ -43,6 +46,7 @@ $("document").ready(function(){
 				$("#generalForm").hide();
 				$("#densityForm").hide();
 				$("#featureForm").hide();
+				$("#salesForm").hide();
 				break;
 
 		case 4: $("#densityForm").show();
@@ -50,6 +54,7 @@ $("document").ready(function(){
 				$("#appearanceForm").hide();
 				$("#dimensionsForm").hide();
 				$("#featureForm").hide();
+				$("#salesForm").hide();
 				break;
 		
 		case 5: $("#featureForm").show();
@@ -57,12 +62,21 @@ $("document").ready(function(){
 				$("#appearanceForm").hide();
 				$("#dimensionsForm").hide();
 				$("#densityForm").hide();
+				$("#salesForm").hide();
+				break;
+
+		case 6: $("#salesForm").show();
+				$("#generalForm").hide();
+				$("#appearanceForm").hide();
+				$("#dimensionsForm").hide();
+				$("#densityForm").hide();
+				$("#featureForm").hide();
 				break;
 
 	}
 }
 	
-*/
+
 
 
 });
