@@ -53,3 +53,33 @@ ul.side-nav.fixed::-webkit-scrollbar {
 	padding-top: 1em;
 	text-align: right;
 }
+
+#sealable {
+	padding-top: 1em;
+	text-align: left;
+}
+
+#freezable {
+	padding-top: 1em;
+	text-align: left;
+}
+
+#microable {
+	padding-top: 1em;
+	text-align: left;
+}
+
+#foodable {
+	padding-top: 1em;
+	text-align: left;
+}
+
+#recyclable {
+	padding-top: 1em;
+	text-align: left;
+}
+
+#biodegradable {
+	padding-top: 1em;
+	text-align: left;
+}
