@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 	<!-- Compiled and minified CSS -->
   	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
-	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
 	
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
@@ -16,8 +16,8 @@
 		<div class="row">
 			<div class="col s12 m6 l6">
 				<div class="input-field col m6 l6 s12">
-			        <select>
-			       		<option value="" disabled selected>Choose Category</option>
+			        <select id="cutlery">
+			       		<option value="" disabled="disabled" selected>Choose Category</option>
 			       		<option value="Bowl">Bowl</option>
 					    <option value="Container">Container</option>
 					    <option value="Cutlery">Cutlery</option>
@@ -29,10 +29,10 @@
 		</div>
 		<div class="row">
 			<div class="input-field col m6 l6 s12">
-			   	<select>
-			       	<option value="" disabled selected>Choose Lid Type</option>
+			   	<select id="lidavail" class="browser-default">
+			       	<option value="" disabled>Choose Lid Type</option>
 			       	<option value="Available">Available</option>
-				    <option value="Not_Available">Not Available</option>
+				    <option value="Not_Available" id="yes">Not Available</option>
 				    <option value="Lid_Only">Availbe with lid only</option>
 			   	</select>
 			   	<label>Material</label>
@@ -62,7 +62,7 @@
 	<script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="   crossorigin="anonymous"></script>
 	 <!-- Compiled and minified JavaScript -->
   	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
-    <script type="text/javascript" src="js/main.js"></script>      
+    <script type="text/javascript" src="js/index.js"></script>      
 
 </body>
 </html>
