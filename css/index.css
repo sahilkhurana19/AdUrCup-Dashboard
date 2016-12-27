@@ -19,3 +19,7 @@ h1 {
 div .row {
 	margin-top: 1em;
 }
+
+#additionalFeatures {
+	font-size: 20px;
+}
