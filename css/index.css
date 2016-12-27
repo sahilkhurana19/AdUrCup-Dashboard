@@ -1,8 +1,21 @@
 body {
 	overflow-y: scroll;
 	overflow-x: hidden !important;
+	padding-bottom: 1em;
 }
 
 h1 {
 	text-align: center;
+}
+
+#weight-field {
+	margin-left: 1em;
+}
+
+#volume-field {
+	margin-left: 0.8em;
+}
+
+div .row {
+	margin-top: 1em;
 }
