@@ -1,0 +1,8 @@
+body {
+	overflow-y: scroll;
+	overflow-x: hidden !important;
+}
+
+h1 {
+	text-align: center;
+}

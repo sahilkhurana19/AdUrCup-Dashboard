@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Create Disposables Dashboard</title>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.12.4/css/selectize.bootstrap3.min.css" integrity="sha256-xaHB15TZbLhew82A2NzY8rvCCp/REcOA/kSpWWO7TlE=" crossorigin="anonymous" />
+	<link rel="stylesheet" type="text/css" href="css/index.css"/>
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
+				<h1>Create Disposables</h1>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
+				<h2>General</h2>
+			</div>
+		</div>
+		<form>
+			<div class="row">
+				<div class="col-sm-6 col-lg-6 col-xs-12 col-md-6">
+					<div class="form-group">
+						<label for="category-field">Category</label>
+						<input type="text" id="category-field" class="form-control" placeholder="Enter Category:" autocomplete="on">
+					</div>
+				</div>
+				<div class="col-sm-6 col-lg-6 col-xs-12 col-md-6">
+					<div class="form-group">
+						<label for="subcategory-field">Sub Category</label>
+						<input type="text" id="subcategory-field" class="form-control" placeholder="Enter Sub Category:" autocomplete="on">
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-6 col-lg-6 col-xs-12 col-md-6">
+					<div class="form-group">
+						<label for="material-field">Material</label>
+						<input type="text" id="material-field" class="form-control" placeholder="Enter Material:" autocomplete="on">
+					</div>
+				</div>
+				<div class="col-sm-6 col-lg-6 col-xs-12 col-md-6">
+					<div class="form-group">
+						<label for="colour-field">Colour</label>
+						<input type="text" id="colour-field" class="form-control" placeholder="Enter Colour:" autocomplete="on">
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-6 col-lg-6 col-xs-12 col-md-6">
+					<div class="form-group">
+						<label for="shape-field">Shape</label>
+						<input type="text" id="shape-field" class="form-control" placeholder="Enter Shape:" autocomplete="on">
+					</div>
+				</div>
+				<div class="col-sm-6 col-lg-6 col-xs-12 col-md-6">
+					<div class="form-group">
+						<label for="subshape-field">Sub Shape</label>
+						<input type="text" id="subshape-field" class="form-control" placeholder="Enter Sub Shape:" autocomplete="on">
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-6 col-lg-6 col-xs-12 col-md-6">
+					<div class="form-group">
+						<label for="surfacetype-field">Surface Type</label>
+						<input type="text" id="surfacetype-field" class="form-control" placeholder="Enter Surface Type:" autocomplete="on">
+					</div>
+				</div>
+				<div class="col-sm-6 col-lg-6 col-xs-12 col-md-6">
+					<div class="form-group">
+						<label for="surfacedesign-field">Surface Design</label>
+						<input type="text" id="surfacedesign-field" class="form-control" placeholder="Enter Surface Design:" autocomplete="on">
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12 col-xs-12 col-sm-12 col-lg-12">
+					<h2>Dimensions</h2>
+				</div>
+			</div>
+			<div class="row">
+				<table class="table table-responsive">
+					<tr>
+						<th>Dimension</th>
+						<th>Key</th>
+						<th>Value</th>
+						<th>Unit</th>
+					</tr>
+					<tr>
+						<td>
+							<div class="checkbox">
+								<label>
+									<input type="checkbox" name="sideRadio" id="topRadio" value="Top">
+									Top
+								</label>
+							</div>
+						</td>
+						<td>
+							<select class="form-control">
+								<option>1</option>
+								<option>2</option>
+								<option>3</option>
+								<option>4</option>
+								<option>5</option>
+							</select>
+						</td>
+						<td>
+							<div class="form-group">
+								<input type="text" id="topvalue-field" class="form-control" placeholder="Enter Value">
+							</div>
+						</td>
+						<td>
+							<select class="form-control">
+								<option>cm</option>
+								<option>mm</option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<div class="checkbox">
+								<label>
+									<input type="checkbox" name="sideRadio" id="topRadio" value="Top">
+									Bottom
+								</label>
+							</div>
+						</td>
+						<td>
+							<select class="form-control">
+								<option>1</option>
+								<option>2</option>
+								<option>3</option>
+								<option>4</option>
+								<option>5</option>
+							</select>
+						</td>
+						<td>
+							<div class="form-group">
+								<input type="text" id="topvalue-field" class="form-control" placeholder="Enter Value">
+							</div>
+						</td>
+						<td>
+							<select class="form-control">
+								<option>cm</option>
+								<option>mm</option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<div class="checkbox">
+								<label>
+									<input type="checkbox" name="sideRadio" id="topRadio" value="Top">
+									Side
+								</label>
+							</div>
+						</td>
+						<td>
+							<select class="form-control">
+								<option>1</option>
+								<option>2</option>
+								<option>3</option>
+								<option>4</option>
+								<option>5</option>
+							</select>
+						</td>
+						<td>
+							<div class="form-group">
+								<input type="text" id="topvalue-field" class="form-control" placeholder="Enter Value">
+							</div>
+						</td>
+						<td>
+							<select class="form-control">
+								<option>cm</option>
+								<option>mm</option>
+							</select>
+						</td>
+					</tr>
+				</table>
+			</div>
+		</form>
+	</div>	
+	
+
+
+
+
+
+
+	
+	
+	<script src="https://code.jquery.com/jquery-3.1.1.js" integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA=" crossorigin="anonymous"></script>
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
+
+
