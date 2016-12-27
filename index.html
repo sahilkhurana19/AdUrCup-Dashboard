@@ -196,7 +196,7 @@
 					<div class="form-inline">
 						<div class="form-group">
 							<label for="weight-field">Weight</label>
-							<input type="number" id="weight-field">
+							<input type="number" id="weight-field" class="form-control">
 						</div>
 					</div>
 				</div>
@@ -216,7 +216,7 @@
 					<div class="form-inline">
 						<div class="form-group">
 							<label for="volume-field">Volume</label>
-							<input type="number" id="volume-field">
+							<input type="number" id="volume-field" class="form-control">
 						</div>
 					</div>
 				</div>
@@ -236,7 +236,7 @@
 					<div class="form-inline">
 						<div class="form-group">
 							<label for="gramage-field">Gramage</label>
-							<input type="text" id="gramage-field">
+							<input type="text" id="gramage-field" class="form-control">
 						</div>
 					</div>
 				</div>
@@ -244,7 +244,7 @@
 					<div class="form-inline">
 						<div class="form-group">
 							<label for="gsm-field">GSM</label>
-							<input type="text" id="gsm-field">
+							<input type="text" id="gsm-field" class="form-control">
 						</div>
 					</div>
 				</div>
@@ -252,7 +252,7 @@
 					<div class="form-inline">
 						<div class="form-group">
 							<label for="compartment-field">Compartment</label>
-							<input type="text" id="compartment-field">
+							<input type="text" id="compartment-field" class="form-control">
 						</div>
 					</div>
 				</div>
@@ -266,10 +266,12 @@
 						<option>With Lid Only</option>
 					</select>
 				</div>
-				<div class="col-sm-3 col-lg-3 col-xs-12 col-md-3">
+				<div class="col-sm-6 col-lg-6 col-xs-12 col-md-6">
 					<div class="form-inline">
-						<label for="lid-field">Lid options:</label>
-						<input type="text" id="lid-field" autocomplete="on">
+						<div class="form-group">
+							<label for="lid-field">Lid options:</label>
+							<input type="text" id="lid-field" autocomplete="on" class="form-control">
+						</div>
 					</div>
 				</div>
 			</div>
@@ -377,6 +379,111 @@
 			<div class="row">
 				<h3>Best Used In:</h3>
 				<input type="text" id="bestusedin">
+			</div>
+			<div class="row">
+				<h2>Sales</h2>
+			</div>
+			<div class="row">
+				<div class="col-md-6 col-lg-6 col-sm-6 col-xs-12">
+					<div class="form-group">
+						<label for="manufacturer-field">Manufacturer</label>
+						<input type="text" id="manufacturer-field" autocomplete="on" class="form-control">
+					</div>
+				</div>
+				<div class="col-md-6 col-lg-6 col-sm-6 col-xs-12">
+					<div class="form-group">
+						<label for="seller-field">Seller</label>
+						<input type="text" id="seller-field" autocomplete="on" class="form-control">
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-offset-3 col-xs-4 col-lg-offset-3 col-md-offset-3 col-sm-2 col-md-2 col-xs-4">
+					<h4 style="margin-top: -0em">Choose type:</h4>
+				</div>
+				<div class="col-md-2 col-lg-2 col-xs-4 col-sm-2">
+					<label class="radio-inline">
+						<input type="radio" name="distribution" value="Pieces">Packets
+					</label>
+				</div>
+				<div class="col-md-2 col-lg-2 col-xs-4 col-sm-2">
+					<label class="radio-inline">
+						<input type="radio" name="distribution" value="Packets">Pieces
+					</label>
+				</div>
+			</div>
+			<div class="row">
+				<div class="form-inline">
+					<div class="form-group">
+	    				<label class="sr-only" for="vendorprice-field">Tax (in %)</label>
+				    	<div class="input-group">
+					      <input type="number" class="form-control" id="vendorprice-field" placeholder="Vendor Price">
+					      <div class="input-group-addon">per</div>
+				    	</div>
+				  	</div>
+			  	</div>
+			</div>
+			<div class="row">
+				<table class="table table-responsive">
+					<tr>
+						<th>MOQ</th>
+						<th>Increment Value</th>
+						<th>% Margin</th>
+					</tr>
+					<tr>
+						<td><input type="number" id="MOQ" placeholder="Enter MOQ" class="form-control"></td>
+						<td><input type="number" id="IncrementValue" placeholder="Enter Increment Value" class="form-control"></td>
+						<td><input type="number" id="Margin" placeholder="Enter Margin in %" value="10" class="form-control"></td>				
+					</tr>
+					<tr>
+						<td>1000</td>
+						<td>100</td>
+						<td>5.0</td>
+					</tr>
+					<tr>
+						<td>1000</td>
+						<td>100</td>
+						<td>5.0</td>
+					</tr>
+				</table>
+			</div>
+			<div class="row">
+				<button type="button" class="btn btn-success">Add More Items</button>
+			</div>
+			<div class="row">
+				<div class="form-inline">
+					<div class="form-group">
+	    				<label class="sr-only" for="tax-field">Tax (in %)</label>
+				    	<div class="input-group">
+					      <input type="number" class="form-control" id="tax-field" placeholder="Tax">
+					      <div class="input-group-addon">%</div>
+				    	</div>
+				  	</div>
+			  	</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-12 col-sm-6 col-lg-6 col-md-6">
+					<div class="form-group">
+						<label for="specialnametag-field">Special Name Tag</label>
+						<input type="text" id="specialnametag-field" class=form-control autocomplete="on">
+					</div>
+				</div>
+				<div class="col-xs-12 col-sm-6 col-lg-6 col-md-6">
+					<div class="form-group">
+						<label for="producttitle-field">Product Title</label>
+						<input type="text" id="producttitle-field" class=form-control>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-6 col-md-6 col-lg-6 col-sm-6" style="text-align: right;">
+					<label type="button" class="btn btn-primary btn-file">
+					Upload Image<input type="file" style="display: none;">
+					</label>
+				</div>
+				<div class="col-xs-6 col-md-6 col-lg-6 col-sm-6">
+					<button type="button" class="btn btn-danger">Save</button>
+				</div>
 			</div>
 		</form>
 	</div>	
