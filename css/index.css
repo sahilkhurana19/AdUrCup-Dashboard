@@ -43,3 +43,7 @@ h1 {
 .table tbody tr td {
 	padding: 0px;
 }
+
+div .col-sm-7 {
+	padding-left: 0em;
+}

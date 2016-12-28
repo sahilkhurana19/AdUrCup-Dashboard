@@ -27,7 +27,7 @@
 				<div class="col-sm-6 col-lg-3 col-xs-12 col-md-3">
 					<div class="form-horizontal">
 						<div class="form-group">
-							<div class="col-sm-3 col-lg-3 col-md-3 col-xs-4">
+							<div class="col-sm-3 col-lg-3 col-md-3 col-xs-4" style="text-align: right">
 								<label for="category-field">Category</label>
 							</div>
 							<div class="col-sm-9 col-lg-9 col-xs-8 col-md-9">
@@ -39,7 +39,7 @@
 				<div class="col-sm-6 col-lg-3 col-xs-12 col-md-3">
 					<div class="form-horizontal">
 						<div class="form-group">
-							<div class="col-sm-5 col-lg-5 col-md-5 col-xs-5">
+							<div class="col-sm-5 col-lg-5 col-md-5 col-xs-5" style="text-align: right">
 								<label for="subcategory-field">Sub Category</label>
 							</div>
 							<div class="col-sm-7 col-lg-7 col-xs-7 col-md-7">	
@@ -54,10 +54,10 @@
 				<div class="col-sm-6 col-lg-3 col-xs-12 col-md-3">
 					<div class="form-horizontal">
 						<div class="form-group">
-							<div class="col-sm-3 col-lg-3 col-md-3 col-xs-4">
+							<div class="col-sm-5 col-lg-5 col-md-5 col-xs-4" style="text-align: right;">
 								<label for="material-field">Material</label>
 							</div>
-							<div class="col-sm-9 col-lg-9 col-xs-8 col-md-9">
+							<div class="col-sm-7 col-lg-7 col-xs-8 col-md-7">
 								<input type="text" id="material-field" class="form-control" placeholder="Enter Material:" autocomplete="on">
 							</div>
 						</div>
@@ -66,7 +66,7 @@
 				<div class="col-sm-6 col-lg-3 col-xs-12 col-md-3">
 					<div class="form-horizontal">
 						<div class="form-group">
-							<div class="col-sm-5 col-lg-5 col-md-5 col-xs-5">
+							<div class="col-sm-5 col-lg-5 col-md-5 col-xs-5" style="text-align: right; ">
 								<label for="colour-field">Colour</label>
 							</div>
 							<div class="col-sm-7 col-lg-7 col-xs-7 col-md-7">
@@ -80,7 +80,7 @@
 				<div class="col-sm-6 col-lg-3 col-xs-12 col-md-3">
 					<div class="form-horizontal">
 						<div class="form-group">
-							<div class="col-sm-3 col-lg-3 col-md-3 col-xs-4">
+							<div class="col-sm-3 col-lg-3 col-md-3 col-xs-4" style="text-align: right;">
 								<label for="shape-field">Shape</label>
 							</div>
 							<div class="col-sm-9 col-lg-9 col-xs-8 col-md-9">
@@ -92,7 +92,7 @@
 				<div class="col-sm-6 col-lg-3 col-xs-12 col-md-3">
 					<div class="form-horizontal">
 						<div class="form-group">
-							<div class="col-sm-5 col-lg-5 col-md-5 col-xs-5">
+							<div class="col-sm-5 col-lg-5 col-md-5 col-xs-5" style="text-align: right;">
 								<label for="subshape-field">Sub Shape</label>
 							</div>
 							<div class="col-sm-7 col-lg-7 col-xs-7 col-md-7">
@@ -106,10 +106,10 @@
 				<div class="col-sm-6 col-lg-3 col-xs-12 col-md-3">
 					<div class="form-horizontal">
 						<div class="form-group">
-							<div class="col-sm-3 col-lg-3 col-md-3 col-xs-4">
+							<div class="col-sm-5 col-lg-5 col-md-5 col-xs-4" style="text-align: right;">
 								<label for="surfacetype-field">Surface Type</label>
 							</div>
-							<div class="col-sm-9 col-lg-9 col-xs-8 col-md-9">	
+							<div class="col-sm-7 col-lg-7 col-xs-8 col-md-7">	
 								<input type="text" id="surfacetype-field" class="form-control" placeholder="Enter Surface Type:" autocomplete="on">
 							</div>
 						</div>
@@ -118,8 +118,8 @@
 				<div class="col-sm-6 col-lg-3 col-xs-12 col-md-3">
 					<div class="form-horizontal">
 						<div class="form-group">
-							<div class="col-sm-5 col-lg-5 col-md-5 col-xs-5">
-								<label for="surfacedesign-field">Surface Design</label>
+							<div class="col-sm-5 col-lg-5 col-md-5 col-xs-5" style="text-align: right;">
+								<label for="surfacedesi gn-field">Surface Design</label>
 							</div>
 							<div class="col-sm-7 col-lg-7 col-xs-7 col-md-7">
 								<input type="text" id="surfacedesign-field" class="form-control" placeholder="Enter Surface Design:" autocomplete="on">
@@ -218,43 +218,50 @@
 					</table>
 				</div>
 			</div>
-			<div class="row" style="">
-				<div class="col-md-6 col-sm-6 col-lg-6 col-xs-6">
-					<div class="form-inline">
+			<div class="row">
+				<div class="col-md-3 col-sm-3 col-lg-3 col-xs-12">
+					<div class="form-horizontal">
 						<div class="form-group">
-							<label for="weight-field">Weight</label>
-							<div class="input-group">
-								<input type="number" id="weight-field" class="form-control">
-
-								<div class="input-group-addon">
-									<label class="radio-inline">
-										<input type="radio" name="weight-unit" value="gm" checked>gm
-									</label>
-								</div>
-								<div class="input-group-addon">
-									<label class="radio-inline">
-										<input type="radio" name="weight-unit" value="kg">kg
-									</label>
+							<div class="col-sm-2 col-lg-2 col-md-2 col-xs-2">
+								<label for="weight-field">Weight</label>
+							</div>
+							<div class="col-sm-10 col-lg-10 col-md-10 col-xs-8">
+								<div class="input-group">
+									<input type="number" id="weight-field" class="form-control">
+									<div class="input-group-addon">
+										<label class="radio-inline">
+											<input type="radio" name="weight-unit" value="gm" checked>gm
+										</label>
+									</div>
+									<div class="input-group-addon">
+										<label class="radio-inline">
+											<input type="radio" name="weight-unit" value="kg">kg
+										</label>
+									</div>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-				<div class="col-md-6 col-sm-6 col-lg-6 col-xs-6">
-					<div class="form-inline">
+				<div class="col-md-3 col-sm-3 col-lg-3 col-xs-12">
+					<div class="form-horizontal">
 						<div class="form-group">
-							<label for="volume-field">Volume</label>
-							<div class="input-group">
-								<input type="number" id="volume-field" class="form-control">
-								<div class="input-group-addon">
-									<label class="radio-inline">
-										<input type="radio" name="volume-unit" value="ml" checked>mL
-									</label>
-								</div>
-								<div class="input-group-addon">
-									<label class="radio-inline">
-										<input type="radio" name="volume-unit" value="l">L
-									</label>
+							<div class="col-sm-2 col-lg-2 col-md-2 col-xs-2">
+								<label for="volume-field">Volume</label>
+							</div>
+							<div class="col-sm-10 col-lg-10 col-md-10 col-xs-8">
+								<div class="input-group">
+									<input type="number" id="volume-field" class="form-control">
+									<div class="input-group-addon">
+										<label class="radio-inline">
+											<input type="radio" name="volume-unit" value="ml" checked>mL
+										</label>
+									</div>
+									<div class="input-group-addon">
+										<label class="radio-inline">
+											<input type="radio" name="volume-unit" value="l">L
+										</label>
+									</div>
 								</div>
 							</div>
 						</div>
