@@ -16,12 +16,9 @@ h1 {
 	margin-left: 0.8em;
 }
 
-div .row {
-	margin-top: 1em;
-}
 
 #additionalFeatures {
-	font-size: 20px;
+	font-size: 15px;
 }
 
 #price {
@@ -30,4 +27,16 @@ div .row {
 
 #priceunit {
 	text-align: left;
+}
+
+#tablediv {
+	padding-right: 1em;
+	padding-left: 1em;
+	padding-top: 1em;
+}
+
+#typeTag {
+	text-align: right;
+	padding-bottom: 1em;
+	margin-top: 0.2em;
 }
