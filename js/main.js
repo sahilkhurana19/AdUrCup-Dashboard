@@ -11,6 +11,6 @@ selectizeOptions = {
 
 $("document").ready(function(){
 	//$(".js-example-multiple").select2();
-	$('#bestusedfor').selectize(selectizeOptions);
-	$('#bestusedin').selectize(selectizeOptions);
+	//$('#bestusedfor').selectize(selectizeOptions);
+	//$('#bestusedin').selectize(selectizeOptions);
 })
