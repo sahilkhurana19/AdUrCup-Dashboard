@@ -5,6 +5,19 @@ body {
 	background-color: #ededed
 }
 
+input {
+	box-sizing: border-box;
+}
+
+#test {
+	display: block;
+}
+
+.form-control {
+	height: 27px;
+	border-radius: 0px;
+}
+
 .navbar-default {
 	background-color: black;
 	border-color: black;
@@ -36,16 +49,72 @@ label {
 }
 
 .checkbtn {
-	border-radius: 50%;
+	border-radius: 100%;
 	margin-top: 1.2em;
+	border-width: 0.8px;
+	border-color: #000;
+	padding: 3px 7px;
+	width: 30px;
+
 }
 
-.topkey-unit {
+.topkey-unit, .bottomkey-unit, .sidekey-unit {
 	border-radius: 0px;
 	height: 27px;
 	width: 9em;
 }
 
-.topkey-unit .form-control {
+.topkey-unit, .bottomkey-unit, .sidekey-unit .form-control {
 	font-size: 13px;
+}
+
+.customcheck {
+	float: left;
+	width: 30px;
+	margin-top: 5px;
+}
+
+.calctest {
+	float: left;
+	width: calc(100% - 30px);
+}
+
+.keyrow {
+	padding-left: 15px;
+}
+
+.dimensionlabel {
+	font-size: 11.4px;
+}
+
+@media only screen 
+	and (min-device-width: 375px)
+	and (max-device-width: 425px) {
+		.topkey-unit, .bottomkey-unit, .sidekey-unit {
+			width: 7em;		
+		}
+
+		.customcheck {
+			margin-top: 28px;
+		}
+
+		.dimensionlabel {
+			font-size: 11.4px;
+		}
+}
+
+@media only screen
+	and(min-device-width: 320px)
+	and(max-device-width: 375px) {
+		.topkey-unit, .bottomkey-unit, .sidekey-unit {
+			width: 5em;		
+		}
+
+		.customcheck {
+			margin-top: 28px;
+		}
+
+		.dimensionlabel {
+			font-size: 11.4px;
+		}
 }

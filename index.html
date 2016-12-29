@@ -36,90 +36,162 @@
 	</div>
 	<form>
 		<div class="row">
-			<div class="col-sm-2 col-lg-2 col-md-2 col-xs-6">
+			<div class="col-sm-4 col-lg-2 col-md-2 col-xs-12">
 				<div class="form-group">
 					<label for="category-field">Category*</label>
-					<input type="text" id="category-field" placeholder="eg: Cutlery" autocomplete="on" required>
+					<input type="text" class="form-control" id="category-field" placeholder="eg: Cutlery" autocomplete="on" required>
 				</div>
 			</div>
-			<div class="col-sm-2 col-lg-2 col-md-2 col-xs-6">
+			<div class="col-sm-4 col-lg-2 col-md-2 col-xs-12">
 				<div class="form-group">
 					<label for="subcategory-field">Sub Category</label>
-					<input type="text" id="subcategory-field" placeholder="eg: Spoon" autocomplete="on">
+					<input type="text" class="form-control" id="subcategory-field" placeholder="eg: Spoon" autocomplete="on">
 				</div>
 			</div>
 		</div>
 		<div class="row">
-			<div class="col-sm-2 col-lg-2 col-md-2 col-xs-6">
+			<div class="col-sm-6 col-lg-2 col-md-2 col-xs-12">
 				<div class="form-group">
 					<label for="material-field">Material*</label>
-					<input type="text" id="material-field" placeholder="eg: Plastic" autocomplete="on" required>
+					<input type="text" class="form-control" id="material-field" placeholder="eg: Plastic" autocomplete="on" required>
 				</div>
 			</div>
-			<div class="col-sm-2 col-lg-2 col-md-2 col-xs-6">
+			<div class="col-sm-6 col-lg-2 col-md-2 col-xs-12">
 				<div class="form-group">
 					<label for="colour-field">Colour*</label>
-					<input type="text" id="colour-field" placeholder="eg: Black" autocomplete="on" required>
+					<input type="text" class="form-control" id="colour-field" placeholder="eg: Black" autocomplete="on" required>
 				</div>
 			</div>
-			<div class="col-sm-2 col-lg-2 col-md-2 col-xs-6">
+			<div class="col-sm-6 col-lg-2 col-md-2 col-xs-12">
 				<div class="form-group">
 					<label for="shape-field">Shape*</label>
-					<input type="text" id="shape-field" placeholder="eg: Rectangle" autocomplete="on" required>
+					<input type="text" class="form-control" id="shape-field" placeholder="eg: Rectangle" autocomplete="on" required>
 				</div>
 			</div>
-			<div class="col-sm-2 col-lg-2 col-md-2 col-xs-6">
+			<div class="col-sm-6 col-lg-2 col-md-2 col-xs-12">
 				<div class="form-group">
 					<label for="subshape-field">Sub Shape</label>
-					<input type="text" id="subshape-field" placeholder="eg: Curved Cone" autocomplete="on">
+					<input type="text" class="form-control" id="subshape-field" placeholder="eg: Curved Cone" autocomplete="on">
 				</div>
 			</div>
-			<div class="col-sm-2 col-lg-2 col-md-2 col-xs-6">
+			<div class="col-sm-6 col-lg-2 col-md-2 col-xs-12">
 				<div class="form-group">
 					<label for="surfacetexture-field">Surface Texture</label>
-					<input type="text" id="surfacetexture-field" placeholder="eg: Plain" autocomplete="on">
+					<input type="text" class="form-control" id="surfacetexture-field" placeholder="eg: Plain" autocomplete="on">
 				</div>
 			</div>
-			<div class="col-sm-2 col-lg-2 col-md-2 col-xs-6">
+			<div class="col-sm-6 col-lg-2 col-md-2 col-xs-12">
 				<div class="form-group">
 					<label for="surfacedesign-field">Surface Design</label>
-					<input type="text" id="surfacedesign-field" placeholder="eg: Printed" autocomplete="on">
+					<input type="text" class="form-control" id="surfacedesign-field" placeholder="eg: Printed" autocomplete="on">
 				</div>
 			</div>
 		</div>
 		<hr class="greyhr">
 		<div class="row">
 			<div class="col-sm-12 col-md-6 col-xs-12 col-lg-6">
-				<div class="row">
-					<div class="col-lg-1 col-xs-1 col-md-1 col-sm-1">
+				<div class="row keyrow">
+					<div class="customcheck">
 						<div class="btn-group" data-toggle="buttons">
-							<label class="btn btn-success active checkbtn">
+							<label class="btn btn-default checkbtn">
 								<input type="checkbox" autocomplete="off" checked>
 								<span class="glyphicon glyphicon-ok"></span>
 							</label>
 						</div>
 					</div>
-					<div class="col-lg-4 col-md-4 col-xs-4 col-sm-4 keysdiv">
-						<div class="form-group">
-							<label for="topkey-field">Size Top Key</label>
-							<input type="text" id="topkey-field" placeholder="eg: Top Area" autocomplete="on">
+					<div class="calctest">
+						<div class="col-lg-4 col-md-4 col-xs-4 col-sm-4 keysdiv">
+							<div class="form-group">
+								<label for="topkey-field">Size Top Key</label>
+								<input type="text" class="form-control" id="topkey-field" placeholder="eg: Top Area" autocomplete="on">
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-4 col-xs-4 col-sm-4 keysdiv">
+							<div class="form-group">
+								<label for="topvalue-field">Size Top Value</label>
+								<input type="text" class="form-control" id="topvalue-field" placeholder="eg: 123 x 234" autocomplete="on">
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-3 col-xs-3 col-sm-3 topkey-unit">
+							<div class="form-group">
+								<label for="topkey-unit">Size Top Unit</label>
+								<select class="form-control topkey-unit">
+									<optgroup>
+										<option value="mm">mm</option>
+										<option value="cm">cm</option>
+									</optgroup>
+								</select>
+							</div>
+						</div>
+					</div>						
+				</div>
+				<div class="row keyrow">
+					<div class="customcheck">
+						<div class="btn-group" data-toggle="buttons">
+							<label class="btn btn-default checkbtn">
+								<input type="checkbox" autocomplete="off" checked>
+								<span class="glyphicon glyphicon-ok"></span>
+							</label>
 						</div>
 					</div>
-					<div class="col-lg-4 col-md-4 col-xs-4 col-sm-4 keysdiv">
-						<div class="form-group">
-							<label for="topkey-field">Size Top Value</label>
-							<input type="text" id="topkey-field" placeholder="eg: 123 x 234" autocomplete="on">
+					<div class="calctest">
+						<div class="col-lg-4 col-md-4 col-xs-4 col-sm-4 keysdiv">
+							<div class="form-group">
+								<label for="sidekey-field">Size Side Key</label>
+								<input type="text" class="form-control" id="sidekey-field" placeholder="Start Typing Here" autocomplete="on">
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-4 col-xs-4 col-sm-4 keysdiv">
+							<div class="form-group">
+								<label for="sidevalue-field">Size Side Value</label>
+								<input type="text" class="form-control" id="sidevalue-field" placeholder="Start typing here" autocomplete="on">
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-4 col-xs-4 col-sm-4 sidekey-unit">
+							<div class="form-group">
+								<label for="sidekey-unit">Size Side Unit</label>
+								<select class="form-control sidekey-unit">
+									<optgroup>
+										<option value="mm">mm</option>
+										<option value="cm">cm</option>
+									</optgroup>
+								</select>
+							</div>
+						</div>
+					</div>						
+				</div>
+				<div class="row keyrow">
+					<div class="customcheck">
+						<div class="btn-group" data-toggle="buttons">
+							<label class="btn btn-default checkbtn">
+								<input type="checkbox" autocomplete="off" checked>
+								<span class="glyphicon glyphicon-ok"></span>
+							</label>
 						</div>
 					</div>
-					<div class="col-lg-3 col-md-3 col-xs-3 col-sm-3 topkey-unit">
-						<div class="form-group">
-							<label for="topkey-unit">Size Top Unit</label>
-							<select class="form-control topkey-unit">
-								<optgroup>
-									<option value="mm">mm</option>
-									<option value="cm">cm</option>
-								</optgroup>
-							</select>
+					<div class="calctest">
+						<div class="col-lg-4 col-md-4 col-xs-4 col-sm-4 keysdiv">
+							<div class="form-group">
+								<label for="bottomkey-field">Size Bottom Key</label>
+								<input type="text" class="form-control" id="bottomkey-field" placeholder="Start Typing here" autocomplete="on">
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-4 col-xs-4 col-sm-4 keysdiv">
+							<div class="form-group">
+								<label for="bottomkey-value">Size Bottom Value</label>
+								<input type="text" class="form-control" id="bottomkey-value" placeholder="Start typing here" autocomplete="on">
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-4 col-xs-4 col-sm-4 bottomkey-unit">
+							<div class="form-group">
+								<label for="bottomkey-unit"><span class="dimensionlabel">Size Bottom</span> Unit</label>
+								<select class="form-control bottomkey-unit">
+									<optgroup>
+										<option value="mm">mm</option>
+										<option value="cm">cm</option>
+									</optgroup>
+								</select>
+							</div>
 						</div>
 					</div>						
 				</div>	
