@@ -62,13 +62,20 @@ b {
 }
 
 .PacketPiece {
-	padding: 0;
-	margin-left: 0;
-	margin-right: 0;
+	padding-right: 0;
+	
 }
 
 .VendorFieldBox {
 	margin-left: 0;
 	margin-right: 0;
 	padding: 0;
+}
+
+.btn-file {
+	margin-bottom: 1em;
+}
+
+.NameTitleBox {
+	padding-left: 0em;
 }
