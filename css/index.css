@@ -9,9 +9,6 @@ input {
 	box-sizing: border-box;
 }
 
-#test {
-	display: block;
-}
 
 .form-control {
 	height: 27px;
@@ -22,8 +19,7 @@ input {
 	background-color: black;
 	border-color: black;
 	background-image: none;
-	border-radius: 0px;
-}
+	border-radius: 0px;}
 
 label {
 	font-weight: normal
@@ -39,6 +35,13 @@ label {
 .greyhr {
 	border-color: #c7c7c7;
 	font-size: 8px;
+}
+
+.verticalline {
+    border-left:1px solid #c7c7c7;
+    height:200px;
+    float: left;
+
 }
 
 .btn span.glyphicon {    			
@@ -87,6 +90,10 @@ label {
 	font-size: 11.4px;
 }
 
+
+
+
+
 @media only screen 
 	and (min-device-width: 375px)
 	and (max-device-width: 425px) {
@@ -100,6 +107,10 @@ label {
 
 		.dimensionlabel {
 			font-size: 11.4px;
+		}
+
+		.verticalline {
+			display: none;
 		}
 }
 
@@ -116,5 +127,9 @@ label {
 
 		.dimensionlabel {
 			font-size: 11.4px;
+		}
+
+		.verticalline {
+			display: none;
 		}
 }
