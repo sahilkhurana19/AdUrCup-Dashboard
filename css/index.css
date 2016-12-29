@@ -2,5 +2,50 @@ body {
 	overflow-y: scroll;
 	overflow-x: hidden !important;
 	padding-bottom: 1em;
+	background-color: #ededed
 }
 
+.navbar-default {
+	background-color: black;
+	border-color: black;
+	background-image: none;
+	border-radius: 0px;
+}
+
+label {
+	font-weight: normal
+}
+
+#blackhr {
+	border-color: black;
+	font-size: 10px;
+	padding: 0;
+	margin-top: 0;
+}
+
+.greyhr {
+	border-color: #c7c7c7;
+	font-size: 8px;
+}
+
+.btn span.glyphicon {    			
+	opacity: 0;				
+}
+.btn.active span.glyphicon {				
+	opacity: 1;				
+}
+
+.checkbtn {
+	border-radius: 50%;
+	margin-top: 1.2em;
+}
+
+.topkey-unit {
+	border-radius: 0px;
+	height: 27px;
+	width: 9em;
+}
+
+.topkey-unit .form-control {
+	font-size: 13px;
+}

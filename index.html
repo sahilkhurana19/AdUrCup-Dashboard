@@ -22,12 +22,111 @@
 </head>
 <body>
 <header>
-	<nav>
+	<nav class="navbar navbar-default">
 		
 	</nav>
 </header>
 <main>
-		
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-sm-12 col-lg-12 col-xs-12 col-md-12">
+			<h4><b>CREATE DISPOSABLES</b></h4>
+			<hr id="blackhr">
+		</div>
+	</div>
+	<form>
+		<div class="row">
+			<div class="col-sm-2 col-lg-2 col-md-2 col-xs-6">
+				<div class="form-group">
+					<label for="category-field">Category*</label>
+					<input type="text" id="category-field" placeholder="eg: Cutlery" autocomplete="on" required>
+				</div>
+			</div>
+			<div class="col-sm-2 col-lg-2 col-md-2 col-xs-6">
+				<div class="form-group">
+					<label for="subcategory-field">Sub Category</label>
+					<input type="text" id="subcategory-field" placeholder="eg: Spoon" autocomplete="on">
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-2 col-lg-2 col-md-2 col-xs-6">
+				<div class="form-group">
+					<label for="material-field">Material*</label>
+					<input type="text" id="material-field" placeholder="eg: Plastic" autocomplete="on" required>
+				</div>
+			</div>
+			<div class="col-sm-2 col-lg-2 col-md-2 col-xs-6">
+				<div class="form-group">
+					<label for="colour-field">Colour*</label>
+					<input type="text" id="colour-field" placeholder="eg: Black" autocomplete="on" required>
+				</div>
+			</div>
+			<div class="col-sm-2 col-lg-2 col-md-2 col-xs-6">
+				<div class="form-group">
+					<label for="shape-field">Shape*</label>
+					<input type="text" id="shape-field" placeholder="eg: Rectangle" autocomplete="on" required>
+				</div>
+			</div>
+			<div class="col-sm-2 col-lg-2 col-md-2 col-xs-6">
+				<div class="form-group">
+					<label for="subshape-field">Sub Shape</label>
+					<input type="text" id="subshape-field" placeholder="eg: Curved Cone" autocomplete="on">
+				</div>
+			</div>
+			<div class="col-sm-2 col-lg-2 col-md-2 col-xs-6">
+				<div class="form-group">
+					<label for="surfacetexture-field">Surface Texture</label>
+					<input type="text" id="surfacetexture-field" placeholder="eg: Plain" autocomplete="on">
+				</div>
+			</div>
+			<div class="col-sm-2 col-lg-2 col-md-2 col-xs-6">
+				<div class="form-group">
+					<label for="surfacedesign-field">Surface Design</label>
+					<input type="text" id="surfacedesign-field" placeholder="eg: Printed" autocomplete="on">
+				</div>
+			</div>
+		</div>
+		<hr class="greyhr">
+		<div class="row">
+			<div class="col-sm-12 col-md-6 col-xs-12 col-lg-6">
+				<div class="row">
+					<div class="col-lg-1 col-xs-1 col-md-1 col-sm-1">
+						<div class="btn-group" data-toggle="buttons">
+							<label class="btn btn-success active checkbtn">
+								<input type="checkbox" autocomplete="off" checked>
+								<span class="glyphicon glyphicon-ok"></span>
+							</label>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-4 col-xs-4 col-sm-4 keysdiv">
+						<div class="form-group">
+							<label for="topkey-field">Size Top Key</label>
+							<input type="text" id="topkey-field" placeholder="eg: Top Area" autocomplete="on">
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-4 col-xs-4 col-sm-4 keysdiv">
+						<div class="form-group">
+							<label for="topkey-field">Size Top Value</label>
+							<input type="text" id="topkey-field" placeholder="eg: 123 x 234" autocomplete="on">
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-3 col-xs-3 col-sm-3 topkey-unit">
+						<div class="form-group">
+							<label for="topkey-unit">Size Top Unit</label>
+							<select class="form-control topkey-unit">
+								<optgroup>
+									<option value="mm">mm</option>
+									<option value="cm">cm</option>
+								</optgroup>
+							</select>
+						</div>
+					</div>						
+				</div>	
+			</div>
+		</div>
+	</form>
+</div>
 </main>	
 
 
