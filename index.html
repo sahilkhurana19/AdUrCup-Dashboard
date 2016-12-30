@@ -347,20 +347,91 @@
 		<div class="row">
 			<div class="col-sm-12 col-md-6 col-lg-6 col-xs-12">
 				<div class="row">
-					<div class="col-md-4 col-lg-4 col-sm-5 col-xs-12">
+					<div class="col-md-4 col-lg-4 col-sm-4 col-xs-12">
 						<div class="form-group">
 							<label for="unitdescriptions">Unit Description</label>
 							<select id="unitdescriptions" class="form-control">
-									<option>Packets</option>
-									<option>Pieces</option>
+									<option value="Packets">Packets</option>
+									<option value="Pieces">Pieces</option>
 							</select>
 						</div>
 					</div>
-					<div class="col-md-4 col-lg-4 col-sm-5 col-xs-12">
+					<div class="col-md-4 col-lg-4 col-sm-4 col-xs-12">
 						<div class="form-group">
 							<label for="piecesperpacket">Units Per Packet</label>
-							<input type="text" id="piecesperpacket" placeholder="Start Typing Here" value="12 units">
+							<input type="text" id="piecesperpacket" placeholder="Start Typing Here" value="12 units"  class="form-control">
 						</div>
+					</div>
+					<div class="col-md-offset-2 col-sm-offset-2 col-lg-offset-2 col-md-2 col-lg-2 col-sm-2 col-xs-12">
+						<div class="form-group">
+							<label for="tax">Tax %</label>
+							<input type="text" id="tax" placeholder="eg: 12.5%" value="12.5 %" class="form-control">
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-4 col-lg-4 col-sm-4 col-xs-12">
+						<div class="form-group">
+							<div class="form-group">
+								<label for="MOQ">MOQ(in Packets)</label>
+								<input type="text" id="tax" placeholder="eg: 200 Packets" value="200 Packets" class="form-control">
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 col-lg-4 col-sm-4 col-xs-12">
+						<div class="form-group">
+							<label for="incrementvalue">Increment Value(in Packets)</label>
+							<select id="incrementvalue" class="form-control">
+								<option value="100">100</option>
+								<option value="200">200</option>
+							</select>
+						</div>
+					</div>
+					<div class="col-md-4 col-lg-4 col-sm-4 col-xs-12">
+						<div class="form-group">
+							<label for="vendorprice-field">Vendor Price per packet</label>
+							<input type="text" id="vendorprice-field" placeholder="eg: 3.20 per packet" value="" class="form-control">
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<button class="btn btn-info btn-block moqbutton">ADD MORE PRICES(BASED ON DIFFERENT MOQ & INCREMENT VALUE)</button>
+				</div>
+
+			</div>
+			<div class="col-sm-12 col-md-6 col-lg-6 col-xs-12" id="lastcolumn">
+				<div class="row">
+					<div class="col-sm-6 col-md-6 col-lg-6 col-xs-12">
+						<div class="form-group">
+							<label for="manufacturer-field">Manufacturer*</label>
+							<input type="text" id="manufacturer-field" placeholder="eg: Maa Pet Private Limited" class="form-control" autocomplete="on" required>
+						</div>
+					</div>
+					<div class="col-sm-6 col-md-6 col-lg-6 col-xs-12">
+						<div class="form-group">
+							<label for="seller-field">Seller*</label>
+							<input type="text" id="seller-field" placeholder="eg: Maa Pet Private Limited" class="form-control" autocomplete="on" required>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-6 col-md-6 col-lg-6 col-xs-12">
+						<div class="form-group">
+							<label for="specialtag-field">Special Name Tag</label>
+							<input type="text" id="specialtag-field" placeholder="eg: Kuliya (Local Name to add to product title)" class="form-control" autocomplete="on" required>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-12 col-md-12 col-lg-12 col-xs-12">
+						<b>Standard Product Title Here - 300 ml - 4 compartment</b>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-4 col-md-4 col-lg-4 col-xs-12">
+						<label type="button" class="btn btn-primary btn-file btn-block">
+						Upload Image<input type="file" style="display: none;">
+						</label>
 					</div>
 				</div>
 			</div>

@@ -22,4 +22,8 @@ $("document").ready(function(){
 		placeholder: "Packets/Pieces",
 		allowClear: true
 	});
+	$("#incrementvalue").select2({
+		placeholder: "Select from options",
+		allowClear: true
+	});
 })

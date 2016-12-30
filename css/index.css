@@ -123,6 +123,26 @@ label {
 	background-color: red;
 }
 
+.btn-info {
+	background-image: none;
+	background-color: #505050;
+	border-radius: 0;
+}
+
+.btn-info:focus, .btn-info:hover, .btn-info:active:focus {
+	background-color: #505050;
+}
+
+.btn-file {
+	background-image: none;
+	background-color: #002f5b;
+	border-radius: 0;
+}
+
+.btn-file:focus, .btn-file:hover, .btn-file:active:focus {
+	background-color: #002f5b;
+}
+
 
 
 
@@ -148,6 +168,14 @@ label {
 		label {
 			font-size: 12px;
 		}
+
+		.moqbutton {
+			font-size: 10px;
+		}
+		#lastcolumn {
+			padding-top: 1em;
+		}
+
 }
 
 @media only screen
@@ -172,6 +200,13 @@ label {
 		.verticalline {
 			display: none;
 		}
+
+		.moqbutton {
+			font-size: 9px;
+		}
+		#lastcolumn {
+			padding-top: 1em;
+		}
 }
 
 @media only screen
@@ -183,6 +218,13 @@ label {
 
 		#miscfields{
 			width: 99%;
+		}
+
+		.moqbutton {
+			font-size: 11px;
+		}
+		#lastcolumn {
+			padding-top: 1em;
 		}
 
 }
@@ -200,6 +242,10 @@ label {
 
 		#notonlaptop {
 			visibility: visible;
+		}
+
+		#lastcolumn {
+			padding-top: 1em;
 		}
 
 
