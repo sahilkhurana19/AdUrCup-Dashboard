@@ -143,6 +143,16 @@ label {
 	background-color: #002f5b;
 }
 
+.btn-success {
+	background-image: none;
+	background-color: #006f00;
+	border-radius: 0;
+}
+
+.btn-success:focus, .btn-success:hover, .btn-success:active:focus {
+	background-color: #006f00;
+}
+
 
 
 
@@ -174,6 +184,10 @@ label {
 		}
 		#lastcolumn {
 			padding-top: 1em;
+		}
+		.topkey-unit, .bottomkey-unit, .sidekey-unit {
+			padding-left: 0;
+			padding-right: 0;
 		}
 
 }
@@ -207,6 +221,11 @@ label {
 		#lastcolumn {
 			padding-top: 1em;
 		}
+
+		.topkey-unit, .bottomkey-unit, .sidekey-unit {
+			padding-left: 0;
+			padding-right: 0;
+		}
 }
 
 @media only screen
@@ -225,6 +244,10 @@ label {
 		}
 		#lastcolumn {
 			padding-top: 1em;
+		}
+		.topkey-unit, .bottomkey-unit, .sidekey-unit {
+			padding-left: 0;
+			padding-right: 0;
 		}
 
 }
