@@ -35,6 +35,12 @@ label {
 .greyhr {
 	border-color: #c7c7c7;
 	font-size: 8px;
+	margin-top : 10px;
+	margin-bottom: 8px;
+}
+
+#notonlaptop {
+	visibility: hidden;
 }
 
 .verticalline {
@@ -86,10 +92,36 @@ label {
 	padding-left: 15px;
 }
 
-.dimensionlabel {
+.dimension-label {
 	font-size: 11.4px;
 }
 
+#miscfields {
+	width: 49%;
+}
+
+.select2-container--default.select2-container--focus .select2-selection--multiple {
+	border: solid black 0px;
+    outline: 0;
+}
+
+.select2-container--default .select2-selection--multiple {
+	border-radius: 0px;
+}
+
+#sealable {
+
+}
+
+.btn-danger {
+	background-image: none;
+	background-color: red;
+	border-radius: 0;
+}
+
+.btn-danger:focus, .btn-danger:hover, .btn-danger:active:focus {
+	background-color: red;
+}
 
 
 
@@ -105,7 +137,35 @@ label {
 			margin-top: 28px;
 		}
 
-		.dimensionlabel {
+		.dimension-label {
+			font-size: 11.4px;
+		}
+
+		.verticalline {
+			display: none;
+		}
+
+		label {
+			font-size: 12px;
+		}
+}
+
+@media only screen
+	and (min-device-width: 320px)
+	and (max-device-width: 375px) {
+		.topkey-unit, .bottomkey-unit, .sidekey-unit {
+			width: 5em;		
+		}
+
+		#miscfields{
+			width: 99%;
+		}
+
+		.customcheck {
+			margin-top: 28px;
+		}
+
+		.dimension-label {
 			font-size: 11.4px;
 		}
 
@@ -115,21 +175,47 @@ label {
 }
 
 @media only screen
-	and(min-device-width: 320px)
-	and(max-device-width: 375px) {
-		.topkey-unit, .bottomkey-unit, .sidekey-unit {
-			width: 5em;		
+	and (min-device-width: 425px)
+	and (max-device-width: 768px) {
+		.dimension-label {
+			font-size: 11.5px;
 		}
 
-		.customcheck {
-			margin-top: 28px;
+		#miscfields{
+			width: 99%;
 		}
 
-		.dimensionlabel {
-			font-size: 11.4px;
+}
+
+@media only screen
+	and (min-device-width: 768px)
+	and (max-device-width: 1024px) {
+		#miscfields{
+			width: 99%;
 		}
 
-		.verticalline {
+		.verticalline{
 			display: none;
+		}
+
+		#notonlaptop {
+			visibility: visible;
+		}
+
+
+}
+
+@media only screen
+	and (min-width: 1024px)
+	and (max-width: 1400px) {
+		label {
+			font-size: 10px;
+		}
+		#miscfields{
+			width: 49%;
+		}
+
+		.verticalline{
+			display: unset;
 		}
 }

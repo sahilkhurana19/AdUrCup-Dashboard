@@ -13,8 +13,8 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.12.4/css/selectize.bootstrap3.min.css" integrity="sha256-xaHB15TZbLhew82A2NzY8rvCCp/REcOA/kSpWWO7TlE=" crossorigin="anonymous" />
 	<link rel="stylesheet" type="text/css" href="css/index.css"/>
 	<script src="https://code.jquery.com/jquery-3.1.1.js" integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA=" crossorigin="anonymous"></script>
-	<!--link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/css/select2.min.css" rel="stylesheet" />
-<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/js/select2.min.js"></script-->
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/css/select2.min.css" rel="stylesheet" />
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/js/select2.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="css/selectize.css">
 	<link rel="stylesheet" type="text/css" href="css/selectize.bootstrap3.css">
 	<script type="text/javascript" src="js/selectize.js"></script>
@@ -87,7 +87,7 @@
 				</div>
 			</div>
 		</div>
-		<hr class="greyhr">
+		<hr class="greyhr" style="padding-top: 0;">
 		<div class="row">
 			<div class="col-sm-12 col-md-6 col-xs-12 col-lg-6">
 				<div class="row keyrow">
@@ -102,19 +102,19 @@
 					<div class="calctest">
 						<div class="col-lg-4 col-md-4 col-xs-4 col-sm-4 keysdiv">
 							<div class="form-group">
-								<label for="topkey-field">Size Top Key</label>
+								<label for="topkey-field" class="dimension-label">Size Top Key</label>
 								<input type="text" class="form-control" id="topkey-field" placeholder="eg: Top Area" autocomplete="on">
 							</div>
 						</div>
 						<div class="col-lg-4 col-md-4 col-xs-4 col-sm-4 keysdiv">
 							<div class="form-group">
-								<label for="topvalue-field">Size Top Value</label>
+								<label for="topvalue-field" class="dimension-label">Size Top Value</label>
 								<input type="text" class="form-control" id="topvalue-field" placeholder="eg: 123 x 234" autocomplete="on">
 							</div>
 						</div>
 						<div class="col-lg-3 col-md-3 col-xs-3 col-sm-3 topkey-unit">
 							<div class="form-group">
-								<label for="topkey-unit">Size Top Unit</label>
+								<label id="topkey-unit" class="dimension-label">Size Top Unit</label>
 								<select class="form-control topkey-unit">
 									<optgroup>
 										<option value="mm">mm</option>
@@ -137,19 +137,19 @@
 					<div class="calctest">
 						<div class="col-lg-4 col-md-4 col-xs-4 col-sm-4 keysdiv">
 							<div class="form-group">
-								<label for="sidekey-field">Size Side Key</label>
+								<label for="sidekey-field" class="dimension-label">Size Side Key</label>
 								<input type="text" class="form-control" id="sidekey-field" placeholder="Start Typing Here" autocomplete="on">
 							</div>
 						</div>
 						<div class="col-lg-4 col-md-4 col-xs-4 col-sm-4 keysdiv">
 							<div class="form-group">
-								<label for="sidevalue-field">Size Side Value</label>
+								<label for="sidevalue-field" class="dimension-label">Size Side Value</label>
 								<input type="text" class="form-control" id="sidevalue-field" placeholder="Start typing here" autocomplete="on">
 							</div>
 						</div>
 						<div class="col-lg-4 col-md-4 col-xs-4 col-sm-4 sidekey-unit">
 							<div class="form-group">
-								<label for="sidekey-unit">Size Side Unit</label>
+								<label id="sidekey-unit" class="dimension-label">Size Side Unit</label>
 								<select class="form-control sidekey-unit">
 									<optgroup>
 										<option value="mm">mm</option>
@@ -172,19 +172,19 @@
 					<div class="calctest">
 						<div class="col-lg-4 col-md-4 col-xs-4 col-sm-4 keysdiv">
 							<div class="form-group">
-								<label for="bottomkey-field">Size Bottom Key</label>
+								<label for="bottomkey-field" class="dimension-label">Size Bottom Key</label>
 								<input type="text" class="form-control" id="bottomkey-field" placeholder="Start Typing here" autocomplete="on">
 							</div>
 						</div>
 						<div class="col-lg-4 col-md-4 col-xs-4 col-sm-4 keysdiv">
 							<div class="form-group">
-								<label for="bottomkey-value">Size Bottom Value</label>
+								<label for="bottomkey-value" class="dimension-label">Size Bottom Value</label>
 								<input type="text" class="form-control" id="bottomkey-value" placeholder="Start typing here" autocomplete="on">
 							</div>
 						</div>
 						<div class="col-lg-4 col-md-4 col-xs-4 col-sm-4 bottomkey-unit">
 							<div class="form-group">
-								<label for="bottomkey-unit"><span class="dimensionlabel">Size Bottom</span> Unit</label>
+								<label id="bottomkey-unit" class="dimension-label">Size Bottom Unit</label>
 								<select class="form-control bottomkey-unit">
 									<optgroup>
 										<option value="mm">mm</option>
@@ -197,8 +197,7 @@
 				</div>	
 			</div>
 			<div class="verticalline"></div>
-			<!--hr class="greyhr"-->
-			<div class="col-sm-12 col-md-6 col-xs-12 col-lg-6" style="width: 49%">
+			<div class="col-sm-12 col-md-6 col-xs-12 col-lg-6" id="miscfields">
 				<div class="row">
 					<div class="col-sm-8 col-md-4 col-lg-4 col-xs-8">
 						<div class="form-group">
@@ -277,8 +276,95 @@
 				</div>
 			</div>
 		</div>
+		<hr class="greyhr" style="">
+		<div class="row">
+			<div class="col-sm-12 col-md-6 col-lg-6 col-xs-12">
+				<div class="row">
+					<div class="col-md-12 col-sm-12 col-lg-12 col-xs-12">
+					<div>
+						<label for="bestusedfor">Best Used For</label>
+					</div>
+					<div>	
+						<select id="bestusedfor" class="form-control" multiple>
+							<optgroup>
+								<option>Something Test</option>
+								<option>Somemore Test</option>
+								<option>Another Test</option>
+							</optgroup>
+						</select>
+					</div>
+					</div>
+				</div>
+				<div class="row" style="padding-top: 1em;">
+					<div class="col-md-12 col-sm-12 col-lg-12 col-xs-12">
+						<label for="bestusedin">Best Used In</label>
+						<select id="bestusedin" class="form-control" multiple>
+							<optgroup>								
+								<option>Something Test</option>
+								<option>Somemore Test</option>
+								<option>Another Test</option>
+							</optgroup>
+						</select>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-12 col-md-6 col-lg-6 col-xs-12">
+				<div class="row">
+					<div class="col-sm-4 col-md-2 col-lg-2 col-xs-6">
+						<label for="sealable">Sealable</label>
+						<input class="btn btn-danger btn-block btn-sm" id="sealable" type="button" value="NO">
+					</div>
+					<div class="col-sm-4 col-md-2 col-lg-2 col-xs-6">
+						<label for="freezable">Freeze Safe</label>
+						<input class="btn btn-danger btn-block btn-sm" id="Freezable" type="button" value="NO">
+					</div>
+					<div class="col-sm-4 col-md-2 col-lg-2 col-xs-6">
+						<label for="microwave">Microwave</label>
+						<input class="btn btn-danger btn-block btn-sm" id="microwave" type="button" value="NO">
+					</div>
+					<div class="col-sm-4 col-md-2 col-lg-2 col-xs-6">
+						<label for="foodable">Food Grade</label>
+						<input class="btn btn-danger btn-block btn-sm" id="foodable" type="button" value="NO">
+					</div>
+					<div class="col-sm-4 col-md-2 col-lg-2 col-xs-6">
+						<label for="recyclable">Recyclable</label>
+						<input class="btn btn-danger btn-block btn-sm" id="recyclable" type="button" value="NO">
+					</div>
+					<div class="col-sm-4 col-md-2 col-lg-2 col-xs-6">
+						<label for="bioable">Bio degrad</label>
+						<input class="btn btn-danger btn-block btn-sm" id="bioable" type="button" value="NO">
+					</div>
+				</div>
+				<div class="row" style="padding-top: 1.3em;">
+					<div class="col-md-12 col-sm-12 col-lg-12 col-xs-12">
+						<label for="addfeatures">Additional Features</label>
+						<input type="text" id="addfeatures" class="form-control">
+					</div>
+				</div>
+			</div>
+		</div>
 		<hr class="greyhr">
-
+		<div class="row">
+			<div class="col-sm-12 col-md-6 col-lg-6 col-xs-12">
+				<div class="row">
+					<div class="col-md-4 col-lg-4 col-sm-5 col-xs-12">
+						<div class="form-group">
+							<label for="unitdescriptions">Unit Description</label>
+							<select id="unitdescriptions" class="form-control">
+									<option>Packets</option>
+									<option>Pieces</option>
+							</select>
+						</div>
+					</div>
+					<div class="col-md-4 col-lg-4 col-sm-5 col-xs-12">
+						<div class="form-group">
+							<label for="piecesperpacket">Units Per Packet</label>
+							<input type="text" id="piecesperpacket" placeholder="Start Typing Here" value="12 units">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 	</form>
 </div>
 </main>	
