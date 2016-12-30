@@ -175,6 +175,10 @@ label {
 		#lastcolumn {
 			padding-top: 1em;
 		}
+		.topkey-unit, .bottomkey-unit, .sidekey-unit {
+			padding-left: 0;
+			padding-right: 0;
+		}
 
 }
 
@@ -207,6 +211,11 @@ label {
 		#lastcolumn {
 			padding-top: 1em;
 		}
+
+		.topkey-unit, .bottomkey-unit, .sidekey-unit {
+			padding-left: 0;
+			padding-right: 0;
+		}
 }
 
 @media only screen
@@ -225,6 +234,10 @@ label {
 		}
 		#lastcolumn {
 			padding-top: 1em;
+		}
+		.topkey-unit, .bottomkey-unit, .sidekey-unit {
+			padding-left: 0;
+			padding-right: 0;
 		}
 
 }
