@@ -153,6 +153,28 @@ label {
 	background-color: #006f00;
 }
 
+#previewimage {
+	max-width: 200px;
+	max-height: 200px;
+}
+
+.modal-lg {
+	width: 1010px;
+}
+
+.img75 {
+	width: 75px;
+}
+.img300 {
+	width: 300px;
+}
+.img500 {
+	width: 500px;
+}
+.img1000 {
+	width: 1000px;
+}
+
 
 
 
